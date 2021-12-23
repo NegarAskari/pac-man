@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import model.Board?>
+<?import java.net.URL?>
+<GridPane alignment="CENTER" hgap="10" prefHeight="500" prefWidth="750" vgap="10"
+          xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GameSettings"
+          styleClass="root">
+
+    <Button text="&#60;" GridPane.columnIndex="0" GridPane.rowSpan="5"
+            fx:id="back" onMouseClicked="#back"/>
+
+    <VBox GridPane.columnIndex="1"  GridPane.rowSpan="5"
+          spacing="10" alignment="CENTER">
+        <Label fx:id="name"/>
+        <Board fx:id="board"/>
+    </VBox>
+
+    <Button text="&#62;" GridPane.columnIndex="2" GridPane.rowSpan="5"
+            fx:id="next" onMouseClicked="#next"/>
+
+    <VBox GridPane.columnIndex="3" spacing="10" GridPane.rowIndex="4">
+        <Button text="Start Game" onMouseClicked="#startGame"/>
+        <Button text="Regenerate" onMouseClicked="#regenerate"/>
+        <Button text="Save" fx:id="save" onMouseClicked="#saveMaze"/>
+        <Button text="Show My Mazes" fx:id="show" onMouseClicked="#showMyMazes"/>
+        <ToggleButton text="Easy Mode" fx:id="gameMode" onMouseClicked="#hardMode"/>
+        <Button text="Back" onMouseClicked="#exitSettings"/>
+    </VBox>
+
+    <HBox GridPane.columnIndex="3" GridPane.rowIndex="0" spacing="8">
+        <Label text="Lives:" styleClass="life"/>
+        <Button text="-" fx:id="lifeDecrease" onMouseClicked="#decreaseLife"/>
+        <Label fx:id="life"/>
+        <Button text="+" fx:id="lifeIncrease" onMouseClicked="#increaseLife"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@stylesheets/settings.css"/>
+    </stylesheets>
+
+</GridPane>

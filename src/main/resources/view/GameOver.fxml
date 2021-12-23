@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<?import javafx.scene.image.ImageView?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="view.GameView" prefHeight="500" prefWidth="750" styleClass="root"
+          vgap="20" hgap="20" alignment="CENTER">
+
+
+    <VBox alignment="CENTER" spacing="10">
+        <ImageView fx:id="image" fitHeight="230.7" fitWidth="212.7"/>
+        <Button text="Restart Game" onMouseClicked="#restart"/>
+        <Button text="Exit" onMouseClicked="#exit"/>
+    </VBox>
+
+    <stylesheets>
+        <URL value="@stylesheets/gameover.css"/>
+    </stylesheets>
+
+
+</GridPane>

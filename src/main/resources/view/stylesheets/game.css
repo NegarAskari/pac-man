@@ -1,0 +1,86 @@
+.root {
+    -fx-background-color: #000000;
+}
+
+.container {
+    -fx-padding: 15;
+}
+
+#pause {
+    -fx-background-color: transparent;
+    -fx-background-image: url("images/pause.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 60 60;
+    -fx-background-position: center center;
+}
+
+#pause:selected {
+    -fx-background-image: url("images/play.png");
+}
+
+#mute {
+    -fx-background-color: transparent;
+    -fx-background-image: url("images/mute.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 60 60;
+    -fx-background-position: center center;
+}
+
+#mute:selected {
+    -fx-background-image: url("images/unmute.png");
+}
+
+#exit {
+    -fx-background-color: transparent;
+    -fx-background-image: url("images/exit.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 45 45;
+    -fx-background-position: center center;
+}
+
+.label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+#board {
+    -fx-translate-y: +60;
+    -fx-translate-x: -10;
+}
+
+#score, #highScore {
+    -fx-font-size: 22px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #fdfd01;
+}
+
+#score, #highScore, #life {
+    -fx-translate-y: -15;
+}
+
+#time {
+    -fx-font-size: 40px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #2121dd;
+}
+
+#exit:hover {
+    -fx-background-image: url("images/exitHover.jpg");
+}
+
+#mute:hover {
+    -fx-background-image: url("images/muteHover.jpg");
+}
+
+#mute:selected:hover {
+    -fx-background-image: url("images/unmuteHover.png");
+}
+
+#pause:hover {
+    -fx-background-image: url("images/pauseHover.png");
+}
+
+#pause:selected:hover {
+    -fx-background-image: url("images/playHover.png");
+}

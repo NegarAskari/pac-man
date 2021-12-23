@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import model.Board?>
+<?import java.net.URL?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="view.GameView" prefHeight="500" prefWidth="750" styleClass="root"
+          vgap="20" hgap="20">
+    <VBox GridPane.columnIndex="0" spacing="20" styleClass="container">
+        <ToggleButton fx:id="pause" prefHeight="65" prefWidth="65" focusTraversable="false" onMouseClicked="#pause"/>
+        <ToggleButton fx:id="mute" prefHeight="65" prefWidth="65" focusTraversable="false" onMouseClicked="#mute"/>
+        <Button fx:id="exit" prefHeight="65" prefWidth="65" focusTraversable="false" onMouseClicked="#exit"/>
+    </VBox>
+
+    <Board fx:id="board" GridPane.columnIndex="1"/>
+
+    <VBox GridPane.columnIndex="2" spacing="20" styleClass="container">
+        <Label text="SCORE:"/>
+        <Label fx:id="score"/>
+        <Label text="HIGH SCORE:"/>
+        <Label fx:id="highScore"/>
+        <Label text="LIVES:"/>
+        <Label fx:id="life"/>
+        <Label fx:id="time"/>
+    </VBox>
+
+    <stylesheets>
+        <URL value="@stylesheets/game.css"/>
+    </stylesheets>
+</GridPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="view.MainPage" prefHeight="400.0" prefWidth="600.0" styleClass="root"
+          alignment="CENTER" hgap="10" vgap="10">
+
+    <VBox alignment="CENTER" spacing="10">
+
+        <Label fx:id="welcome"/>
+
+        <Button text="New Game" onMouseClicked="#newGame"/>
+
+        <Button text="Resume Game" fx:id="resume" onMouseClicked="#resumeGame"/>
+
+        <Button text="Scoreboard" onMouseClicked="#showScoreboard"/>
+
+        <Button text="Change Password" onMouseClicked="#changePassword"/>
+
+        <Button text="Delete Account" onMouseClicked="#deleteAccount"/>
+
+        <Button text="Logout" onMouseClicked="#logout"/>
+    </VBox>
+
+    <stylesheets>
+        <URL value="@stylesheets/main.css"/>
+    </stylesheets>
+</GridPane>

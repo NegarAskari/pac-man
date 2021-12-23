@@ -1,0 +1,87 @@
+.root {
+    -fx-background-color: #000000;
+}
+
+.button {
+    -fx-border-color: #f70001;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-padding: 8;
+    -fx-background-color: #000000;
+    -fx-text-fill: #fdfd01;
+}
+
+.button:hover {
+    -fx-border-color: #0000fd;
+    -fx-background-color: #0000fd;
+    -fx-text-fill: #000000;
+}
+
+#back, #next {
+    -fx-font-size: 50px;
+    -fx-border-color: #000000;
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-padding: 0;
+}
+
+#back:hover, #next:hover, #lifeDecrease:hover, #lifeIncrease:hover {
+    -fx-border-color: #000000;
+    -fx-background-color: #000000;
+    -fx-text-fill: #0000fe;
+}
+
+#name {
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+#lifeDecrease, #lifeIncrease {
+    -fx-border-color: #000000;
+    -fx-background-color: #000000;
+    -fx-font-size: 38px;
+    -fx-text-fill: #fdfd01;
+    -fx-padding: 0;
+}
+
+#life {
+    -fx-translate-y: +8;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.life {
+    -fx-translate-y: +15;
+    -fx-font-size: 22px;
+    -fx-text-fill: #fdb747;
+}
+
+#gameMode {
+    -fx-border-color: #f70001;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-padding: 8;
+    -fx-background-color: #000000;
+    -fx-text-fill: #fdfd01;
+}
+
+#gameMode:selected {
+    -fx-border-color: #0000fd;
+    -fx-background-color: #0000fd;
+    -fx-text-fill: #000000;
+}
+
+#gameMode:hover:selected {
+    -fx-border-color: #f70001;
+}
+
+#gameMode:hover {
+    -fx-border-color: #0000fd;
+}
